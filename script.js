@@ -49,8 +49,7 @@ let isAnimating = false;
 const jackpotEl = document.getElementById("jackpot");
 
 function updateJackpot() {
-  // kalau belum login / elemen tidak ada → skip
-  if (!jackpotEl || !localStorage.getItem("login")) return;
+ 
 
   if (isAnimating) return;
   isAnimating = true;
